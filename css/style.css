@@ -8,12 +8,12 @@
   max-width: 1140px;
   display: flex;
   justify-content: center;
-margin: auto;
+  margin: auto;
 }
 
 body {
   background-color: #75cfb8;
-  font-family: sans-serif,serif;
+  font-family: sans-serif, serif;
 }
 
 .left {
@@ -34,11 +34,11 @@ body {
 }
 
 .header-left ul {
-position: relative;
-left: 100px;
-list-style: none;
-display: flex;
-font-size: 18px;
+  position: relative;
+  left: 100px;
+  list-style: none;
+  display: flex;
+  font-size: 18px;
 }
 
 .header-left p {
@@ -50,9 +50,8 @@ font-size: 18px;
 .header-left ul li {
   padding-left: 10px;
   padding-top: 20px;
-  color:grey;
+  color: grey;
 }
-
 
 .header-mid {
   height: 70px;
@@ -62,31 +61,27 @@ font-size: 18px;
 }
 
 .header-mid i {
-
   height: 46px;
-      font-size: 35px;
-      border-radius: 30px;
-      color: grey;
-      background-color: white;
-      margin-left: 3px;
+  font-size: 35px;
+  border-radius: 30px;
+  color: grey;
+  background-color: white;
+  margin-left: 3px;
 }
 
-.noti{
+.noti {
   padding-left: 10px;
 }
-.ntJr{
+
+.ntJr {
   text-decoration: underline;
 }
 
-
-
 .header-search {
   height: 50px;
-  background-color:#1687a7;
+  background-color: #1687a7;
   border: 1px solid lightgrey;
 }
-
-
 
 .header-scroll {
   height: calc(100% - 379px);
@@ -94,19 +89,16 @@ font-size: 18px;
   overflow-y: scroll;
 }
 
-.header-scroll .one{
+.header-scroll .one {
   display: flex;
   justify-content: flex-start;
   background-color: white;
   border: 1px solid lightgrey;
-
 }
 
 .header-scroll .one p {
   padding-left: 10px;
 }
-
-
 
 .inp {
   height: 40px;
@@ -114,29 +106,63 @@ font-size: 18px;
   /* margin-left: 25px; */
 }
 
-.fontbb{
+.fontbb {
   font-size: 25px;
   color: lightgrey;
   padding-top: 9px;
   padding-left: 9px;
 }
 
-
-img{
+img {
   height: 50px;
   border-radius: 40px;
   padding-top: 3px;
   padding-left: 2px;
 }
 
-.header-top{
+.header-topr {
   height: 60px;
   background-color: yellow;
 }
 
-.header-l{
+.header-l {
   height: 60px;
-  width: 50%;
-  background-color: blue;
+  /* width: 50%; */
+  background-color: lightgrey;
   display: flex;
+  border-left: 2px solid grey;
+}
+
+.name-l {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.p2 {
+  color: grey;
+  font-size: 14px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.header-r {
+  height: 60px;
+  background-color: lightgrey;
+  width: 454px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-r ul {
+  padding-right: 12px;
+  font-size: 20px;
+  padding-top: 16px;
+  color: grey;
+}
+
+.header-r ul li {
+  display: inline-block;
+  padding-left: 5px;
 }
