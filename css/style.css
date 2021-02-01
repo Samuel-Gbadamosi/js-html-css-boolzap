@@ -31,7 +31,26 @@ body {
 .header-left {
   height: 60px;
   background-color: orange;
+  display: flex;
 }
+
+.header-left ul {
+position: relative;
+left: 100px;
+list-style: none;
+display: flex;
+font-size: 21px;
+}
+
+.header-left p {
+  padding-top: 18px;
+      padding-left: 4px;}
+
+.header-left ul li {
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
 
 .header-mid {
   height: 60px;
@@ -42,6 +61,8 @@ body {
   height: 50px;
   background-color:blue;
 }
+
+
 
 .header-scroll {
   height: 330px;
@@ -59,4 +80,11 @@ body {
   font-size: 25px;
   color: lightgrey;
   padding-top: 9px;
-  padding-left: 9px;}
+  padding-left: 9px;
+}
+
+
+img{
+  height: 60px;
+  border-radius: 40px;
+}
