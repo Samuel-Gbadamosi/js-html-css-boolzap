@@ -198,19 +198,36 @@ background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-bool
 
     .right-messages{
       height: 382px;
-      background-color: red;
-      overflow-y: scroll;
+      /* background-color: red; */
+      overflow-y: auto;
     }
 
-    .message-sent p {
+    .message-sent  {
+    height: 42px;
+    width: 30%;
+    padding-left: 18px;
+    margin-left: 20px;
+    margin-right:14px;
+    padding-top: 10px;
+    margin-top: 11px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    float: right;
+
+    }
+
+
+
+    .message-received  {
     height: 42px;
     width: 224px;
     padding-left: 18px;
-    padding-top: 5px;
-    margin-top: 11px;
+    padding-top: 10px;
+    margin-top: 70px;
     margin-left: 20px;
     border-radius: 10px;
-    background-color: lightgreen;
+    background-color: white;
+    float: left;
 
     }
 
