@@ -82,7 +82,8 @@ font-size: 18px;
 
 .header-search {
   height: 50px;
-  background-color:blue;
+  background-color:#1687a7;
+  border: 1px solid lightgrey;
 }
 
 
@@ -126,4 +127,16 @@ img{
   border-radius: 40px;
   padding-top: 3px;
   padding-left: 2px;
+}
+
+.header-top{
+  height: 60px;
+  background-color: yellow;
+}
+
+.header-l{
+  height: 60px;
+  width: 50%;
+  background-color: blue;
+  display: flex;
 }
