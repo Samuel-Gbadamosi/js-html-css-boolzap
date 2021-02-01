@@ -1,3 +1,62 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  padding-top: 57px;
+  padding-left: 100px;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.left {
+  height: 500px;
+  width: 33%;
+  background-color: yellow;
+}
+
+.right {
+  height: 500px;
+  width: 60%;
+  background-color: purple;
+}
+
+.header-left {
+  height: 60px;
+  background-color: orange;
+}
+
+.header-mid {
+  height: 60px;
   background-color: red;
 }
+
+.header-search {
+  height: 50px;
+  background-color:blue;
+}
+
+.header-scroll {
+  height: 330px;
+  background-color: grey;
+  overflow-y: scroll;
+}
+
+.inp {
+  height: 40px;
+  width: 300px;
+  /* margin-left: 25px; */
+}
+
+.fontbb{
+  font-size: 25px;
+  color: lightgrey;
+  padding-top: 9px;
+  padding-left: 9px;}
