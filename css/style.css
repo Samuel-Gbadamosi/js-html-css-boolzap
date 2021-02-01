@@ -8,8 +8,7 @@
   max-width: 1140px;
   display: flex;
   justify-content: center;
-  padding-top: 57px;
-  padding-left: 100px;
+margin: auto;
 }
 
 body {
@@ -18,9 +17,8 @@ body {
 }
 
 .left {
-  height: 500px;
+  /* height: 500px; */
   width: 33%;
-  background-color: yellow;
 }
 
 .right {
@@ -58,7 +56,7 @@ font-size: 18px;
 
 .header-mid {
   height: 70px;
-  background-color: red;
+  background-color: #1687a7;
   display: flex;
   padding-top: 10px;
 }
@@ -90,10 +88,24 @@ font-size: 18px;
 
 
 .header-scroll {
-  height: 330px;
-  background-color: grey;
+  height: calc(100% - 379px);
+  background-color: white;
   overflow-y: scroll;
 }
+
+.header-scroll .one{
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  border: 1px solid lightgrey;
+
+}
+
+.header-scroll .one p {
+  padding-left: 10px;
+}
+
+
 
 .inp {
   height: 40px;
