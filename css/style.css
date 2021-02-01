@@ -101,10 +101,10 @@ body {
 }
 
 .inp {
-  height: 40px;
+  height: 37px;
   width: 300px;
-  /* margin-left: 25px; */
-}
+padding-top: 3px;
+margin-left: 10px;}
 
 .fontbb {
   font-size: 25px;
@@ -195,3 +195,28 @@ background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-bool
       padding-left: 10px;
 
     }
+
+    .right-messages{
+      height: 382px;
+      background-color: red;
+      overflow-y: scroll;
+    }
+
+    .message-sent p {
+    height: 42px;
+    width: 224px;
+    padding-left: 18px;
+    padding-top: 5px;
+    margin-top: 11px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: lightgreen;
+
+    }
+
+
+
+    /* .message-sent{
+      height: 90px;
+      background-color: yellow;
+    } */
