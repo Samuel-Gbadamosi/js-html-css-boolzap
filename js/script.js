@@ -4,7 +4,8 @@ var app = new Vue({
     user: {
       // my acct
       name: 'Megan',
-      avatar: '_io'
+      src: 'img 2/avatar_io.jpg',
+      visible : true
       // my acct
 
     },
@@ -12,7 +13,7 @@ var app = new Vue({
       // my contacts
       {
         name: 'Michele',
-        avatar: '_1',
+        avatar: 'img 2/avatar_1.jpg',
         visible: true,
         messages: [
           {
@@ -36,7 +37,7 @@ var app = new Vue({
       },
       {
         name: 'Fabio',
-        avatar: '_2',
+        avatar: 'img 2/avatar_2.jpg',
         visible: true,
         messages: [
           {
@@ -60,7 +61,7 @@ var app = new Vue({
       },
       {
         name: 'Angela',
-        avatar: '_3',
+        avatar: 'img 2/avatar_2.jpg',
         visible: true,
         messages: [
           {
@@ -82,6 +83,26 @@ var app = new Vue({
 
 
       },
+      {
+        name: 'james',
+        avatar: 'img 2/avatar_5.jpg',
+        visible: true,
+        messages: [
+          {
+            date: '10/01/2020 15:30:00',
+            text: 'lo sai che ha aperto unanuova pizzera?',
+            status: 'sent'
+          },
+          {
+            date: '20/03/2020 16:30:50',
+            text: 'si ma preferirie andare al cinema',
+            status: 'received'
+          }
+
+        ]
+
+
+      }
     ]
 
 

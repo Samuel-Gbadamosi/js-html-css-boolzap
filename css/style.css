@@ -85,7 +85,7 @@ body {
 }
 
 .header-scroll {
-  height: calc(100% - 379px);
+  height: calc(100% - 180px);
   background-color: white;
   overflow-y: scroll;
 }
