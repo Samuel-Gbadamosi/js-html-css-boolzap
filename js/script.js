@@ -1,22 +1,23 @@
 var app = new Vue({
   el: '#app',
   data: {
-    user: {
+    counter: 0,
+    newrAy: [],
+    user: [{
       // my acct
       name: 'Megan',
-      src: 'img 2/avatar_io.jpg',
-      visible : true
+      avatar: 'img 2/avatar_io.jpg',
+      visible: true
       // my acct
 
-    },
+    }],
     contacts: [
       // my contacts
       {
-        name: 'Michele',
+        name: 'bryan',
         avatar: 'img 2/avatar_1.jpg',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '10/01/2020 15:30:55',
             text: 'hai portato a spasso il cane ?',
             status: 'sent'
@@ -30,17 +31,15 @@ var app = new Vue({
             date: '10/01/2020 16:15:22',
             text: 'Tutto fatto!',
             status: 'received'
-           }
+          }
         ],
-
 
       },
       {
         name: 'Fabio',
         avatar: 'img 2/avatar_2.jpg',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '20/03/2020 16:30:00',
             text: 'Ciao come stai ?',
             status: 'sent'
@@ -54,7 +53,7 @@ var app = new Vue({
             date: '10/01/2020 16:15:22',
             text: 'Mi piacerebbe ma devo andare a fare la spesa',
             status: 'sent'
-           }
+          }
         ],
 
 
@@ -63,8 +62,7 @@ var app = new Vue({
         name: 'Angela',
         avatar: 'img 2/avatar_2.jpg',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '28/03/2020 10:10:40',
             text: 'La Marianna va in campagna',
             status: 'received'
@@ -78,7 +76,7 @@ var app = new Vue({
             date: '28/03/2020 16:15:22',
             text: 'Ah scusa!',
             status: 'received'
-           }
+          }
         ],
 
 
@@ -87,10 +85,9 @@ var app = new Vue({
         name: 'james',
         avatar: 'img 2/avatar_5.jpg',
         visible: true,
-        messages: [
-          {
+        messages: [{
             date: '10/01/2020 15:30:00',
-            text: 'lo sai che ha aperto unanuova pizzera?',
+            text: 'lo sai che ha aperto una nuova pizzera?',
             status: 'sent'
           },
           {
@@ -103,11 +100,13 @@ var app = new Vue({
 
 
       }
-    ]
+    ],
 
-
-
-
-  }
+  },
   // end data
+  methods:{
+    buttonS(index){
+        alert('hi');
+    }
+  }
 });

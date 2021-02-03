@@ -85,13 +85,14 @@ body {
 }
 
 .header-scroll {
-  height: calc(100% - 180px);
+  height: calc(100% - 187px);
   background-color: white;
   overflow-y: scroll;
 }
 
 .header-scroll .one {
   display: flex;
+  padding-bottom:30px;
   justify-content: flex-start;
   background-color: white;
   border: 1px solid lightgrey;
@@ -100,7 +101,10 @@ body {
 .header-scroll .one p {
   padding-left: 10px;
 }
+.header-scroll :hover{
+  background-color:lightgrey;
 
+}
 .inp {
   height: 37px;
   width: 300px;
@@ -198,14 +202,14 @@ background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-bool
     }
 
     .right-messages{
-      height: 382px;
+      /* height: 152px; */
       /* background-color: red; */
       overflow-y: auto;
     }
 
     .message-sent  {
-    height: 42px;
-    width: 30%;
+    height: 71px;
+    width: 40%;
     padding-left: 18px;
     margin-left: 20px;
     margin-right:14px;
@@ -214,14 +218,15 @@ background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-bool
     border-radius: 10px;
     background-color: lightgreen;
     float: right;
+    word-break:break-all;
 
     }
 
 
 
     .message-received  {
-    height: 42px;
-    width: 224px;
+    height: 57px;
+    width: 274px;
     padding-left: 18px;
     padding-top: 10px;
     margin-top: 70px;
@@ -229,6 +234,8 @@ background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-bool
     border-radius: 10px;
     background-color: white;
     float: left;
+    word-break:break-all;
+
 
     }
 
