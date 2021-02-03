@@ -47,9 +47,9 @@
         <input class="inp" type="search" placeholder="cerca o inzia una nuova chat">
 
       </div>
-      <div class="header-scroll " >
-       <div class="one" v-for="(contact,index) in contacts">
-         <img :src="contact.avatar" alt=""@click="buttonS(index)" >
+      <div class="header-scroll "  >
+       <div class="one" v-for="(contact,index) in contacts" >
+         <img :src="contact.avatar" alt=""@click="buttonS(index)">
          <p>{{contact.name}}</p>
        </div>
 
@@ -61,10 +61,10 @@
     <div class="right"  >
       <!-- header top -->
       <div class="header-top">
-        <div class="header-l">
-          <img src="img 2/avatar_1.jpg" alt="">
+        <div class="header-l"  v-for="(use) in user">
+          <img :src="use.avatar" alt="">
           <div class="name-l">
-            <p>Michele</p>
+            <p >{{use.name}}</p>
             <p class="p2">Ultimo accesso oggi alle</p>
 
           </div>
@@ -84,13 +84,14 @@
       <!-- chat sect -->
       <div class="main">
         <div class="right-messages " v-for="item in contacts">
-          <div class="message-sent ">
+          <div class="message-sent  ">
            <p v-for="ye in item.messages" v-if="ye.status == 'sent' ">{{ye.text}}</p>
+
           </div>
+
 
           <div class="message-received">
             <p v-for="su in item.messages"  v-if="su.status == 'received' ">{{su.text}}</p>
-
 
 
           </div>

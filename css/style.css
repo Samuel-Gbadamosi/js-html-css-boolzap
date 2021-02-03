@@ -36,7 +36,7 @@ body {
 
 .header-left ul {
   position: relative;
-  left: 100px;
+  left: 195px;
   list-style: none;
   display: flex;
   font-size: 18px;
@@ -201,7 +201,7 @@ background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-bool
 
     }
 
-    .right-messages{
+    .right-messages {
       /* height: 152px; */
       /* background-color: red; */
       overflow-y: auto;

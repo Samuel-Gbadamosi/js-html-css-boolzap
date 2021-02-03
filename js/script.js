@@ -106,7 +106,9 @@ var app = new Vue({
   // end data
   methods:{
     buttonS(index){
-        alert('hi');
+      this.counter = index;
+
+        console.log(index);
     }
   }
 });
