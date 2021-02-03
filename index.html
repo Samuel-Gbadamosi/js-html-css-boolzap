@@ -61,10 +61,10 @@
     <div class="right"  >
       <!-- header top -->
       <div class="header-top">
-        <div class="header-l"  v-for="(use) in user">
-          <img :src="use.avatar" alt="">
+        <div class="header-l">
+          <img :src="user[counter].avatar" alt="">
           <div class="name-l">
-            <p >{{use.name}}</p>
+            <p >{{user[counter].name}}</p>
             <p class="p2">Ultimo accesso oggi alle</p>
 
           </div>
@@ -83,18 +83,19 @@
       <!-- header top -->
       <!-- chat sect -->
       <div class="main">
-        <div class="right-messages " v-for="item in contacts">
-          <div class="message-sent  ">
+        <div class="right-messages" :class="message-sent" v-for="(item,index) in contacts[counter].messages">
+          <p>{{messages.text}}</p>
+          <!-- <div class="message-sent  ">
            <p v-for="ye in item.messages" v-if="ye.status == 'sent' ">{{ye.text}}</p>
 
-          </div>
+          </div> -->
 
 
-          <div class="message-received">
+          <!-- <div class="message-received">
             <p v-for="su in item.messages"  v-if="su.status == 'received' ">{{su.text}}</p>
 
 
-          </div>
+          </div> -->
 
         </div>
 

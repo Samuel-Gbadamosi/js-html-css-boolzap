@@ -2,7 +2,6 @@ var app = new Vue({
   el: '#app',
   data: {
     counter: 0,
-    newrAy: [],
     user: [{
       // my acct
       name: 'Megan',
