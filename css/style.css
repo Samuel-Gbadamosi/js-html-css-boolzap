@@ -176,9 +176,34 @@ ul li {
   height: calc(100% - 117px);
   width: 100%;
 background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-boolzap/img 2/mine.jpg');
-  /* background-color: blue; */
     overflow: auto;
 }
+
+.main .fam{
+padding:15px;
+margin: 5px 30px;
+word-break: break-all;
+}
+
+.sent{
+  float: right;
+  clear: both;
+  background-color: green;
+  border-radius: 20px;
+}
+.received{
+  float:left;
+  clear: both;
+  background-color: white;
+  border-radius: 20px;
+
+}
+.jpp{
+  padding-top: 15px;
+}
+
+
+
 
 
 .footer{
@@ -201,43 +226,14 @@ background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-bool
 
     }
 
-    .right-messages {
-      /* height: 152px; */
-      /* background-color: red; */
-      overflow-y: auto;
-    }
 
-    .message-sent  {
-    height: 71px;
-    width: 40%;
-    padding-left: 18px;
-    margin-left: 20px;
-    margin-right:14px;
-    padding-top: 10px;
-    margin-top: 11px;
-    border-radius: 10px;
-    background-color: lightgreen;
-    float: right;
-    word-break:break-all;
 
+
+    .hide{
+      display: none;
     }
 
 
-
-    .message-received  {
-    height: 57px;
-    width: 274px;
-    padding-left: 18px;
-    padding-top: 10px;
-    margin-top: 70px;
-    margin-left: 20px;
-    border-radius: 10px;
-    background-color: white;
-    float: left;
-    word-break:break-all;
-
-
-    }
 
 
 

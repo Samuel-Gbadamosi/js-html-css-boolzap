@@ -83,27 +83,41 @@
       <!-- header top -->
       <!-- chat sect -->
       <div class="main">
-        <div class="right-messages " v-for="(item,index) in contacts[counter].messages">
-          <p class="message-sent  ">{{item.text}}</p>
 
-
-
-          <div class="message-received" v-for="(item,index) in contacts[counter].messages">
-            <p>{{item.text}}</p>
-
-
-          </div>
+        <div class="fam" :class="item.status" v-for="(item,index) in contacts[counter].messages">
+          {{item.text}}
+         <p class="jpp">{{item.date}}</p>  
 
         </div>
+        <!-- <p class="message-received">{{item.text}}</p> -->
+  <!-- messages kepts repeating so decided to try it this way  -->
+        <!-- <p class="message-received"> dear</p> -->
+
+
+
+        <!-- <div class="right-messages "  v-for="(item,index) in contacts[counter].messages">
+          <p class="message-sent ">{{item.text}}</p> -->
+
+          <!-- <p class="message-received  ">{{item.text}}</p> -->
+
+
+
+          <!-- <div  v-for="(item,index) in contacts[counter].messages">
+            <p class="message-received">{{item.text}}</p>
+
+
+          </div> -->
+
+        <!-- </div> -->
 
       </div>
       <!-- chat sect
 
-<!-- footer -->
+<!- footer -->
       <div class="footer">
         <i class="far fa-smile-beam"></i>
-        <input type="text" placeholder="Scrivi un messagio">
-        <i class="fas fa-microphone"></i>
+        <input type="text"  placeholder="Scrivi un messagio" @keyup.enter="addWord" v-model="newArray" >
+        <i class="fas fa-microphone"  > </i>
       </div>
       <!-- footer -->
 
