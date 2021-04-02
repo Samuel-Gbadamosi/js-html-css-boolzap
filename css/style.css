@@ -175,6 +175,7 @@ ul li {
 .main{
   height: calc(100% - 117px);
   width: 100%;
+  background-color: beige;
 background-image: url('/Users/mac/Desktop/Corso Boolean/boolzap/js-html-css-boolzap/img 2/mine.jpg');
     overflow: auto;
 }

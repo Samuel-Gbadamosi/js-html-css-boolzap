@@ -1,7 +1,7 @@
 var app = new Vue({
   el: '#app',
   data: {
-     newArray:'',
+    newArray: '',
     counter: 0,
     user: [{
       // my acct
@@ -101,43 +101,61 @@ var app = new Vue({
 
       }
     ],
-    newArray:'',
+    newArray: '',
+    nameFiltered: '',
+
 
   },
   // end data
-  methods:{
-    buttonS(index){
+  methods: {
+    buttonS(index) {
       this.counter = index;
-        console.log(index);
+      console.log(index);
     },
- //
-    addWord(){
-   if(this.newArray.length > 0){
-     let newMessage = {
-       text: this.newArray,
-       status:'sent',
-       date :'20/03/2020 16:30:50'
+    //
+    addWord() {
+      if (this.newArray.length > 0) {
+        let newMessage = {
+          text: this.newArray,
+          status: 'sent',
+          date: '20/03/2020 16:30:50'
 
-     };
-     this.contacts[this.counter].messages.push(newMessage);
-     this.newArray = '';
-   }
-   setTimeout(this.autoResp,2000);
-
-
+        };
+        this.contacts[this.counter].messages.push(newMessage);
+        this.newArray = '';
+      }
+      setTimeout(this.autoResp, 2000);
 
 
 
 
 
- },
-  autoResp(){
-    let newMessage2 = {
-      text: 'okay',
-      status:'received'
-    };
-    this.contacts[this.counter].messages.push(newMessage2);
-  }
+
+
+    },
+    autoResp() {
+      let newMessage2 = {
+        text: 'okay',
+        status: 'received',
+        status1: 'sta scrivendo..',
+        date: '20/03/2020 16:30:51'
+
+
+      };
+      this.contacts[this.counter].messages.push(newMessage2);
+    }
+    // searchButtn() {
+    //  this.contacts.forEach((element) => {
+    //   if (element.name.includes(this.nameFiltered)) {
+    //     this.visible= true;
+    //   }
+    //   else {
+    //     this.visible= false;
+    //   }
+    // });
+
+
+
 }
 
 });
